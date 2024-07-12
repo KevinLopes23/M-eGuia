@@ -1,0 +1,712 @@
+@charset "UTF-8";
+
+nav {
+    padding: 20px;
+    background-color: #f0d9da;
+    color: #543a3a;
+    font-size: 0.9em;
+}
+
+body {
+    background-color: #f9ecec;
+    overflow-x: hidden;
+    font-family: poppins;
+}
+
+#barra-navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#barra-navi ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#barra-navi a {
+    padding: 15px;
+}
+
+#barra-navi a:hover {
+    background-color: #f9ecec;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.4s;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.04);
+}
+
+#banner {
+    background-color: #d6c2c3;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px;
+    text-align: center;
+    font-size: 1.2em;
+    width: 800px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+#missao,
+#visao {
+    background-color: #ddc9ca;
+    margin: 50px auto;
+    border-radius: 50px;
+    width: 1200px;
+    padding: 30px;
+    box-shadow: 1px 1px 5px black;
+}
+
+#lista-home > p {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#lista-home > ul {
+    columns: 2;
+    width: 1200px;
+    margin: auto;
+    padding: 30px;
+    list-style: circle;
+}
+
+footer {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    background-color: #363636;
+}
+
+#depoimento {
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+}
+
+.depoimento-pessoa {
+    background-color: #7556569c;
+    text-align: center;
+    padding: 30px;
+    border-radius: 50px;
+    overflow: auto;
+}
+
+.image-depoimento {
+    width: 500px;
+    border-radius: 20px;
+}
+
+/*
+.texto-depoimento{
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 25px;
+}*/
+
+.one-semanas {
+    background-color: #eeeeee;
+    height: 50vh;
+    display: flex;
+}
+
+.semanas-texto {
+    text-align: center;
+    margin: auto;
+    width: 900px;
+}
+
+.semanas-texto > p {
+    font-size: 1.5em;
+}
+
+.semanas-texto > h2 {
+    padding: 20px;
+    font-size: 2.5em;
+}
+
+.two-semanas {
+    background-color: #d6c2c3;
+    height: 50vh;
+    display: flex;
+}
+
+.one-semanas img,
+.two-semanas img {
+    border-radius: 50%;
+    padding: 50px;
+}
+
+#ultima-semana {
+    display: flex;
+    justify-content: center;
+}
+
+#texto-ultima-semana {
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+}
+#semana-final {
+    background-color: #eeeeee;
+}
+
+.sintomas-tipos {
+    background-color: #eeeeee;
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    border: 5px #d6c2c3 solid;
+    overflow: hidden;
+}
+
+.sintomas-tipos h3 {
+    background-color: #d6c2c3;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.sintomas-tipos p {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#sintomas-comuns {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+}
+
+#content-sintomas {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#sintomas-comuns h2 {
+    text-align: center;
+    font-size: 3em;
+    padding: 50px;
+}
+
+.div-filho-sintoma {
+    display: flex;
+    gap: 50px;
+}
+
+.video {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 20px;
+}
+.content-cuidados p {
+    font-size: 1.4em;
+}
+
+#sintoma-mae {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    margin: 100px 0px;
+}
+
+.div-filho-cuidados-tipos {
+    display: flex;
+    gap: 50px;
+}
+
+.content-cuidados h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.cuidados-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.content-cuidados {
+    margin-left: 60px;
+}
+
+.cuidados-tipos {
+    display: grid;
+    background-color: #eeeeee;
+    width: 600px;
+    height: 300px;
+    border-radius: 30px;
+    border: 5px #d6c2c3 solid;
+    overflow: hidden;
+}
+.cuidados-tipos h3 {
+    background-color: #d6c2c3;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.cuidados-tipos p {
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.alimentacao-introducao {
+    text-align: center;
+    padding: 30px;
+}
+
+.imagens-alimentacao {
+    width: 400px;
+    border-radius: 100%;
+}
+
+.imagens-guias-nutricionais {
+    text-align: center;
+}
+
+.imagens-guias-nutricionais img {
+    border-radius: 50%;
+    width: 550px;
+    margin: 40px;
+}
+
+.content-guias-nutricionais {
+    margin-left: 30px;
+}
+
+.manha-lanche-almoco {
+    background-color: #f0d9dab6;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    overflow: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.receitas_dicas {
+    text-align: center;
+}
+
+.receitas_dicas div {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.saude_mental {
+    background-color: #f0d9da;
+    padding: 30px;
+}
+
+.div-mae-dicas-saude-mental {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.dicas-saude-mental {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 350px;
+    border-radius: 20px;
+    height: 400px;
+    background-color: #543a3a8f;
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+.dicas-saude-mental h3 {
+    color: aliceblue;
+}
+
+.dicas-saude-mental ul {
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.dicas-saude-mental li {
+    padding-top: 10px;
+}
+
+#saude-mental-comeco {
+    text-align: center;
+}
+
+#exercicio-1-fisico-segura {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.exercicios_fisicos,
+.beneficios_do_exercicio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    background-color: #d6c2c3;
+    border-radius: 30px;
+}
+
+#imagem-consulta {
+    height: 50vh;
+    background-image: url(consulta.jpg);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+#banner-consulta-exame {
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#conteudo-consulta {
+    background-color: #d6c2c3;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#conteudo-consulta2 {
+    display: flex;
+    gap: 100px;
+    padding: 50px;
+    background-color: #d6c2c3;
+}
+
+.conteudo-consulta-filho {
+    display: grid;
+    text-align: center;
+    border: #543a3a 4px solid;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    padding: 20px;
+    height: 250px;
+    width: 1300px;
+}
+
+.conteudo-consulta-filho2 {
+    display: grid;
+    text-align: center;
+    border: #543a3a 4px solid;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    padding: 20px;
+    height: 300px;
+    width: 600px;
+}
+
+.conteudo-consulta-filho p,
+.conteudo-consulta-filho2 p,
+.conteudo-consulta-filho12 p,
+.conteudo-consulta-filho22 p {
+    padding-top: 20px;
+}
+
+#imagem-consulta2 {
+    background-image: url(medicos.jpg);
+    height: 60vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+.conteudo-consulta-filho22 {
+    display: grid;
+    text-align: center;
+    border: #543a3a 4px solid;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    padding: 20px;
+    height: 400px;
+    width: 365px;
+    overflow: hidden;
+}
+
+.conteudo-consulta-filho12 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: #543a3a 4px solid;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    padding: 20px;
+    height: 150px;
+    width: 1300px;
+}
+
+.teste12345 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-hemograma1 {
+    background-color: #d6c2c3;
+    display: flex;
+    padding: 70px;
+}
+
+.conteudo-hemograma2 {
+    background-color: #eeeeee;
+    display: flex;
+    padding: 70px;
+}
+
+.texto-hemograma h1 {
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.texto-hemograma li {
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.imagem-hemografia {
+    margin: 0px 20px;
+    width: 1200px;
+    height: 900px;
+    background-image: url("hemograma.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.texto-hemograma a {
+    font-size: 30px;
+    background-color: white;
+    padding: 15px;
+}
+
+.imagem-ultrassonografia {
+    margin: 0px 20px;
+    width: 1200px;
+    height: 900px;
+    background-image: url("Ultrassonografia.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.imagem-Mamografia {
+    margin: 0px 20px;
+    width: 1200px;
+    height: 900px;
+    background-image: url("mamografia.jpeg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.imagem-eletrocardiograma {
+    margin: 0px 20px;
+    width: 1200px;
+    height: 900px;
+    background-image: url("eletrocardiograma.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.texto-hemograma a {
+    border: black 3px solid;
+    border-radius: 30px;
+}
+
+.texto-hemograma a:hover {
+    background-color: rgba(0, 0, 0, 0.021);
+}
+
+#mae-content-pos-parto {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    margin: 40px 0px;
+}
+
+#div-mae-content-pos-parto {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-pos-parto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1200px;
+    height: 100%;
+    background-color: #eeeeee;
+    text-align: center;
+    border: #543a3a 4px solid;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.content-pos-parto p {
+    font-size: 1.5em;
+}
+
+#creditos-section {
+    position: relative; /* Necessário para posicionar a pseudo-classe */
+    width: 100%;
+    height: 120h; /* Altura da tela inteira */
+    background: url("usc_frente.jpg") no-repeat center center/cover;
+}
+
+#creditos-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.801); /* Preto com 50% de transparência */
+    z-index: 1; /* Coloca a camada acima da imagem de fundo */
+}
+
+#div-creditos-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative; /* Necessário para posicionar o conteúdo acima do overlay */
+    z-index: 2; /* Coloca o conteúdo acima do overlay preto */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+#preparacao-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%; /* Para garantir que a seção ocupe toda a largura do contêiner pai */
+}
+
+#preparacao-section h2 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#div-creditos-section img {
+    width: 30%;
+    margin: auto;
+}
+
+.div-quadrado-modelo {
+    background-color: #eeeeee;
+    border: #543a3a 4px solid;
+    text-align: center;
+    width: 600px;
+    height: 140px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#div-mao-preparacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-filho-mao-preparacao {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#pos-parto-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.div-quadrado-modelo2 {
+    background-color: #eeeeee;
+    border: #543a3a 4px solid;
+    text-align: center;
+    width: 1000px;
+    height: 140px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.div-filho-mao-preparacao21 {
+    margin-top: 90px;
+}
+
+.div-filho-mao-preparacao21,
+.div-filho-mao-preparacao23 {
+    background-color: #d6c2c3;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.div-filho-mao-preparacao22 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    background-color: #eeeeee;
+}
